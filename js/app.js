@@ -10,6 +10,18 @@ angular.module('app', ['ui.router'])
         .state('characters', {
             url: '/characters',
             templateUrl: '/js/characters/characters.html',
-            controller: 'charCtrl'
+            controller: 'charCtrl',
+            // resolve: {
+            //     characters: function(charSrv){
+            //         return charSrv.getChar().then(function(response){
+            //             return response;
+            //         })
+            //     }
+            // }
+        })
+        .state('map', {
+            url: '/map',
+            templateUrl: '/js/map/map.html',
+            controller: 'mapCtrl'
         });
 });
