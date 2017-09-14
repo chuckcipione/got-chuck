@@ -19,6 +19,11 @@ angular.module('app', ['ui.router'])
             //     }
             // }
         })
+        .state('character', {
+            url: '/characters/:charId',
+            templateUrl: '/js/details/detail.html',
+            controller: 'detailCtrl',
+        })
         .state('map', {
             url: '/map',
             templateUrl: '/js/map/map.html',

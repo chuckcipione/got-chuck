@@ -6,22 +6,63 @@ body {
     color: gold;
     display: flex;
     justify-content: space-around;
+    font-size: 30px;
     font-family: 'Cinzel Decorative', cursive;    
 }
 
+.home:hover {
+    color: white;
+}
+
+.characters:hover{
+    color: white;
+}
+
+.maps:hover {
+    color: white;
+}
+
 .h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
     font-size: 100px;
     text-align: center;
     font-family: 'Cinzel Decorative', cursive;
     color: gold;
 }
 
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
 .h2 {
+    animation-duration: 3s;
+    animation-name: slideintwo;
     font-size: 75px;
     text-align: center;
     font-family: 'Cinzel Decorative', cursive;
     color: gold;
 }
+
+@keyframes slideintwo {
+    from {
+      margin-right: 0%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-right: 100%;
+      width: 100%;
+    }
+  }
 
 .splashimage {
     display: block;
@@ -29,16 +70,33 @@ body {
     margin-right: auto;
     width: 1000px;
     height: 600px;
+    /* border-radius: 230px; */
+    border: 10px solid transparent;
+    border-image: url(/images/frame-medieval.jpg) 18% round;
 }
 
+
 .input {
+    position: relative; left: 50%; margin-left: -320px;;
+    text-decoration-color: black;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 50px;;
+    background-color: gold;
     margin-top: 50px;
-    width: 300px;
+    width: 640px;
+    height: 60px;
 }
 
 .people {
+    text-align: center;
     color: gold;
     font-family: 'Cinzel Decorative', cursive;
+    transition: transform 1s;
+}
+
+.people:hover {
+    transform: scale(2);
 }
 
 .seven {
@@ -52,4 +110,15 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.details {
+    color: gold;
+}
+
+.footer {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    color: gold;
 }
