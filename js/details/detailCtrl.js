@@ -18,5 +18,5 @@ angular.module('app').controller('detailCtrl', function($scope, charSrv, $stateP
         $scope.character = response.data;
         
     })
-    console.log($scope.oneChar);
+    // console.log($scope.oneChar);
 });

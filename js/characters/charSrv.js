@@ -22,6 +22,11 @@ angular.module('app').service('charSrv', function($http, $q){
                     deferred.resolve(this.charContainer);
                 }
             });
+            // return {
+            //     promise : deferred.promise,
+            //     id : deferred.promise.
+            //  }
+            console.log( 'deferred promise:', deferred.promise );
             return deferred.promise;
         }
         // this.getChar = function(url){

@@ -4,9 +4,22 @@ angular.module('app').controller('charCtrl', function($scope, charSrv){
     
     $scope.getAllChar = charSrv.getAllChar()
         .then(response => {
-            console.log(response)
-            $scope.characters = response
-            console.log(response)
+          
+
+            var idd  = response.map( (dude,idx,arr) => dude.url.match( /\d+/g))
+
+        
+        
+      
+
+            // console.log(response)
+         
+            $scope.idd = response.map( (dude,idx,arr) => dude.url.match( /\d+/g))
+
+            console.log($scope.idd)
+            $scope.characters = response;
+
+            
         });
         // i = 0;
         // setInterval(function() {
