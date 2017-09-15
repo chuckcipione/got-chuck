@@ -116,6 +116,12 @@ body {
     color: gold;
 }
 
+.info {
+    margin-top: 50px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+}
+
 .footer {
     font-size: 20px;
     text-align: center;

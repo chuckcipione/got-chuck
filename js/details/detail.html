@@ -1,8 +1,11 @@
 <section class="details">
-    <h1>Character Info</h1>
-    <div>Name: {{character.name}}</div>
-    <div ng-if="character.culture">Culture: {{character.culture}}</div>
-    <div ng-if="character.born">Born {{character.born}}</div>
-    <div ng-if="character.titles">Titles: <span ng-repeat="title in character.titles">{{title}}</span></div>
-    <div ng-if="character.aliases">Aliases: <span ng-repeat="alias in character.aliases">{{alias}}</span></div>
+    <div class="charbox">
+    <h1 class='info'>Character Info</h1>
+    <div>Name: {{character.name}}</div><br>
+    <div ng-if="character.culture">Culture: {{character.culture}}</div><br>
+    <div ng-if="character.born">Born {{character.born}}</div><br>
+    <div ng-if="character.died">Died: {{character.died}}</div><br>
+    <div ng-if="character.titles">Titles: <span ng-repeat="title in character.titles">{{title}}, &nbsp;</span></div><br>
+    <div ng-if="character.aliases">Aliases: <span ng-repeat="alias in character.aliases">{{alias}}, &nbsp; </span></div>
+    </div>
 </section>
