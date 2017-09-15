@@ -1,6 +1,8 @@
 <section class="details">
     <h1>Character Info</h1>
     <div>Name: {{character.name}}</div>
-    <div>Culture: {{character.culture}}</div>
-    <div>Titles: </div>
+    <div ng-if="character.culture">Culture: {{character.culture}}</div>
+    <div ng-if="character.born">Born {{character.born}}</div>
+    <div ng-if="character.titles">Titles: <span ng-repeat="title in character.titles">{{title}}</span></div>
+    <div ng-if="character.aliases">Aliases: <span ng-repeat="alias in character.aliases">{{alias}}</span></div>
 </section>

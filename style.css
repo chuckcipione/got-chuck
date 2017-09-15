@@ -70,9 +70,9 @@ body {
     margin-right: auto;
     width: 1000px;
     height: 600px;
-    /* border-radius: 230px; */
+    border-radius: 230px;
     border: 10px solid transparent;
-    border-image: url(/images/frame-medieval.jpg) 18% round;
+    /* border-image: url(/images/frame2.jpg) 15% round; */
 }
 
 

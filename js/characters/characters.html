@@ -2,8 +2,8 @@
     <form action="">
         <input class='input' ng-model="searchTerm.name" type="text" placeholder="An input has no name"/>
     </form>
-    <div ng-repeat='character in characters | filter:searchTerm'  ui-sref='character({charID: character.id})'>
-        <h1 class="people"><a >{{character.name}}</a></h1>
+    <div ng-repeat='character in characters | filter: searchTerm.name'  ui-sref='character({charId: $index + 1})'>
+        <h1 class="people"><a>{{character.name}}</a></h1>
     </div>
 
 </div>
