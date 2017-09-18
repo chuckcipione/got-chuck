@@ -34,4 +34,5 @@ angular.module('app', ['ui.router'])
             templateUrl: '/js/about/about.html',
             controller: 'aboutCtrl',
         });
+        
 });

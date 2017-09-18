@@ -122,15 +122,16 @@ body {
     font-family: 'Cinzel Decorative', cursive;
 }
 
-/* .container {
+.container {
     position: fixed;
 	left: 0px;
 	top: 0px;
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url('/images/Llgbv_s-200x150.gif') 50% 50% no-repeat black; */
-/* } */
+    background: url('/images/Llgbv_s-200x150.gif') 50% 50% no-repeat;
+}
+
 
 .details {
     text-align: center;
