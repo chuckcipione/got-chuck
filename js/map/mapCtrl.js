@@ -1,6 +1,6 @@
 angular.module('app').controller('mapCtrl', function($scope){
-    $scope.splash = '/images/WorldofIceandFire.png';
+    $scope.splash = 'images/WorldofIceandFire.png';
     return {
-        templateUrl: '/js/map/map.html'
+        templateUrl: 'js/map/map.html'
     }
 });
