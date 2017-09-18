@@ -28,5 +28,10 @@ angular.module('app', ['ui.router'])
             url: '/map',
             templateUrl: '/js/map/map.html',
             controller: 'mapCtrl'
+        })
+        .state('about', {
+            url: '/about',
+            templateUrl: '/js/about/about.html',
+            controller: 'aboutCtrl',
         });
 });
